@@ -1,20 +1,7 @@
 def R_Ua():
-        samsung_models = [
-            "SM-A115A|A115AUCU8CWH6",
-            "SM-N960F|N960FXXSAFWB3",
-            "SM-F711B|F711BXXS6FWK2",
-            "SM-T500|T500XXS6CWI3",
-            "SM-N975U|N975USQS8HWG1",
-            "SM-N986U|N986USQS5HWJ4",
-            "SM-A515F|A515FXXU8HWI5",
-            "SM-A207F|A207FXXU5CWH1",
-            "SM-A720F|A720FXXS9CUA2",
-            "SM-G965F|G965FXXUHFVG6",
-            "SM-G988U|G988USQS7HWJ1",
-            "SM-S367VL|S367VLUDUABUB1",
-            "SM-G950F|G950FXXUCDVI1",]
-        model_,build = random.choice(samsung_models).rsplit('|')
-        os_v = random.randint(59,299)
-        fbav = f"{os_v}.0.0.{random.randint(9,49)}.{random.randint(11,318)}"
-        ua = ('[FBAN/Orca-Android;FBAV/'+str(fbav)+';FBPN/com.facebook.orca;FBLC/en_US;FBBV/'+str(random.randint(1111111,7777777))+';FBCR/null;FBMF/samsung;FBBD/samsung;FBDV/'+str(model_)+'/7.2.9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=810,height=1704};FB_FW/1;]')
-        return ua
+	a = "[FBAN/FB4A;FBAV/"+str(random.randint(49,66))+'.0.0.'+str(random.randrange(20,49))+str(random.randint(11,99)) +";FBBV/"+str(random.randint(11111111,77777777))+";"
+	net = random.choice(["Zong","Telenor","Jazz","Ufone","Warid"])
+	redmi = random.choice(['Redmi 11','Redmi 12','Redmi 2','Redmi 3','Redmi 4','Redmi 5','Redmi 6','Redmi 7','Redmi 8','Redmi 9','Redmi A1','Redmi A2','Redmi A3','Redmi K30','Redmi K40','Redmi K50','Redmi K60','Redmi note','Redmi Note 1','Redmi Note 10Redmi Note 11','Redmi Note 12','Redmi Note 12T','Redmi Note 13','Redmi Note 15 Pro','Redmi Note 2','Redmi Note 3','Redmi Note 4','Redmi Note 5','Redmi Note 5 Pro','Redmi Note 6','Redmi Note 7','Redmi Note 7 Pro','Redmi Note 8 Pro','Redmi Note 10 5G','Redmi Note 8T','Redmi Note 9','Redmi Note 9 5G','Redmi Note 9 Pro','Redmi Note 9 Pro 5G','Redmi Note 9 Pro Max','Redmi Note 9S','Redmi Note 9T','Redmi Note 9T 5G','Redmi Note Prime','Redmi Note10','Redmi Note10T','Redmi Note7','Redmi Note8','Redmi Note8T','Redmi Note9','Redmi Pad','Redmi Pro','Redmi S2','Redmi X','Redmi Y1','Redmi Y1 Lite','Redmi Y2','Redmi Y3','Redmi 2', 'Redmi 3', 'Redmi 3S', 'Redmi 4', 'Redmi 4A', 'Redmi 4X', 'Redmi 5', 'Redmi 5 Plus', 'Redmi 5A', 'Redmi 6', 'Redmi Note', 'Redmi Note 3', 'Redmi Note 4', 'Redmi Note 4X', 'Redmi Note 5', 'Redmi Note 5 Pro', 'Redmi Note 5A', 'Redmi Note 5A Prime', 'Redmi S2', 'Redmi Y1', 'Redmi Y1 Lite', 'Redmi Y2'])
+	b = random.choice(["[FBAN/FB4A;FBAV/308.0.0.42.118;FBBV/275987623;FBDM/{density=2.0,width=720,height=1280};FBLC/en_GB;FBRV/277740997;FBCR/Idea;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/Redmi_4;FBSV/7.1.2;FBOP/1;FBCA/armeabi-v7a:armeabi;]","[FBAN/FB4A;FBAV/325.0.0.36.170;FBBV/301621679;FBDM/{density=1.75,width=720,height=1423};FBLC/en_GB;FBRV/302569938;FBCR/Jio_4G;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A205F;FBSV/10;FBOP/19;FBCA/arm64-v8a:;]","[FBAN/FB4A;FBAV/328.0.0.22.119;FBBV/305660425;FBDM/{density=2.0,width=720,height=1440};FBLC/en_US;FBRV/306637004;FBCR/airtel;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.katana;FBDV/CPH2127;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]","[FBAN/FB4A;FBAV/327.0.0.33.120;FBBV/304400804;FBDM/{density=3.0,width=1080,height=2153};FBLC/en_US;FBRV/0;FBCR/airtel;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.katana;FBDV/CPH2219;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]","[FBAN/FB4A;FBAV/329.0.0.29.120;FBBV/307279747;FBDM/{density=2.75,width=1080,height=2177};FBLC/en_US;FBRV/0;FBCR/IND_airtel;FBMF/Xiaomi;FBBD/Redmi;FBPN/com.facebook.katana;FBDV/M2101K6P;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]","[FBAN/FB4A;FBAV/319.0.0.39.120;FBBV/292233374;FBDM/{density=2.0,width=720,height=1456};FBLC/en_US;FBRV/296244047;FBCR/Vodafone_IN;FBMF/realme;FBBD/realme;FBPN/com.facebook.katana;FBDV/RMX1925;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"])
+	ua = a+b
+	return ua
