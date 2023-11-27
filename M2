@@ -1,20 +1,18 @@
 def R_Ua():
         samsung_models = [
-            "SM-A115A|A115AUCU8CWH6",
-            "SM-N960F|N960FXXSAFWB3",
-            "SM-F711B|F711BXXS6FWK2",
-            "SM-T500|T500XXS6CWI3",
-            "SM-N975U|N975USQS8HWG1",
-            "SM-N986U|N986USQS5HWJ4",
-            "SM-A515F|A515FXXU8HWI5",
-            "SM-A207F|A207FXXU5CWH1",
-            "SM-A720F|A720FXXS9CUA2",
-            "SM-G965F|G965FXXUHFVG6",
-            "SM-G988U|G988USQS7HWJ1",
-            "SM-S367VL|S367VLUDUABUB1",
-            "SM-G950F|G950FXXUCDVI1",]
+            "SM-G570M|G570MUBS8CTG1",
+            "SM-M515F|M515FXXS5DWG1",
+            "SM-G973F|G973FXXUGHWC3",
+            "SM-A715F|A715FXXUADWI2",
+            "SM-A105M|A105MUBS3ASJ2",
+            "SM-N950F|N950FXXUGDVGC",
+            "SM-N986B|N986BXXS8HWK1",
+            "SM-J730FM|J730FMXXU3ARF2",
+            "SM-T720|T720ZCS2DVL1",
+            "SM-N981U|N981USQU1BTJ3",
+            "SM-F916U|F916USQS2JWE4",]
         model_,build = random.choice(samsung_models).rsplit('|')
-        os_v = random.randint(59,299)
-        fbav = f"{os_v}.0.0.{random.randint(9,49)}.{random.randint(11,318)}"
-        ua = ('[FBAN/Orca-Android;FBAV/'+str(fbav)+';FBPN/com.facebook.orca;FBLC/en_US;FBBV/'+str(random.randint(1111111,7777777))+';FBCR/null;FBMF/samsung;FBBD/samsung;FBDV/'+str(model_)+'/7.2.9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=810,height=1704};FB_FW/1;]')
+        os_v = random.randint(4, 13)
+        fbav = f"{os_v}.0.{random.randint(111, 999)}.{random.randint(111, 999)}"
+        ua = ('[FBAN/Orca-Android;FBAV/'+str(fbav)+';FBPN/com.facebook.orca;FBLC/en_US;FBBV/'+str(random.randint(111111111,999999999))+';FBCR/null;FBMF/samsung;FBBD/samsung;FBDV/'+str(model_)+'/7.2.9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=810,height=1704};FB_FW/1;]')
         return ua
