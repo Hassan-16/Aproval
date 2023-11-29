@@ -1,4 +1,4 @@
-def R_Ua():
+def R_Ua1():
         samsung_models = [
             "SM-G570M|G570MUBS8CTG1",
             "SM-M515F|M515FXXS5DWG1",
