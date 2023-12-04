@@ -1,4 +1,5 @@
 def R2_Ua():
-	a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+'.'+str(random.randint(11,77)) +";FBBV/"+str(random.randint(11111111,99999999))+";"
-	b = "[FBAN/Orca-Android;FBAV/280.0.0.0.100;FBPN/com.facebook.orca;FBLC/en_US;FBBV/230476841;FBCR/touch;FBMF/HUAWEI;FBBD/HUAWEI;FBDV/INE-LX1r;FBSV/9;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=2128};FB_FW/1;]"
+	a = "[FBAN/FB4A;FBAV/"+str(random.randint(10,66))+'.0.0.'+str(random.randrange(20,49))+str(random.randint(11,99)) +";FBBV/"+str(random.randint(11111111,77777777))+";"
+	b= "Mozilla/5.0 (Linux; Android 10; SmartN11 Build/QP1A.190711.020; wv) AppleWebKit/537.36"
+	ua = a+b
 	return ua
