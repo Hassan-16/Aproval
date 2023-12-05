@@ -1,5 +1,18 @@
 def R2_Ua():
-	a = "[FBAN/FB4A;FBAV/"+str(random.randint(10,66))+'.0.0.'+str(random.randrange(20,49))+str(random.randint(11,99)) +";FBBV/"+str(random.randint(11111111,77777777))+";"
-	b= "Mozilla/5.0 (Linux; Android 10; SmartN11 Build/QP1A.190711.020; wv) AppleWebKit/537.36"
-	ua = a+b
-	return ua
+        samsung_models = [
+            "SM-P610|P610XXS3FWD2",
+            "SM-T595|T595XXU4CVG4",
+            "SM-A107M|A107MUBS6CWD3",
+            "SM-A307GT|A307GTVJS5CWE2",
+            "SM-G991U|G991USQS8EWG1",
+            "SM-G985F|G985FXXSIHWGA",
+            "SM-N985F|N985FXXS7HWG1",
+            "SM-A515F|A515FXXU7HWF1",
+            "SM-A725F|A725FXXU6DWE3",
+            "SM-M315F|M315FXXU3CWA2",
+            "SM-F916U|F916USQS2JWE4",]
+        model_,build = random.choice(samsung_models).rsplit('|')
+        os_v = random.randint(4, 13)
+        fbav = f"{os_v}.0.{random.randint(111, 999)}.{random.randint(111, 999)}"
+        ua = ('[FBAN/Orca-Android;FBAV/'+str(fbav)+';FBPN/com.facebook.orca;FBLC/en_US;FBBV/'+str(random.randint(111111111,999999999))+';FBCR/null;FBMF/samsung;FBBD/samsung;FBDV/'+str(model_)+'/7.2.9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=810,height=1704};FB_FW/1;]')
+        return ua
