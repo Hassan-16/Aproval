@@ -1,9 +1,18 @@
 def R_Ua():
-	abc = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-	pkgs = random.choice(['com.facebook.katana','com.facebook.mlite','com.facebook.lite','com.facebook.adsmanager','com.facebook.liteh'])
-	build = random.choice(abc)+random.choice(abc)+random.choice(abc)
-	FBBV = str(random.randint(111111111,999999999))
-	FBCR = random.choice(["Jazz","Zong","Mobilink","Ufone"])
-	#########################a ="Mozilla/5.0 (Linux; Android 9; RMX1805 Build/PKQ1.190319.001 ) AppleWebKit/537.36 (KHTML, like Gecko) JioBrowser/1.4.7 Chrome/84.0.4147.111 Mobile Safari/537.36"
-	ua = random.choice(["Mozilla/5.0 (Linux; Android 10; SmartN11 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/378.0.0.12.118;]","Mozilla/5.0 (Linux; Android 10; SmartN11 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36[FBAN/EMA;FBLC/en_GB;FBAV/372.0.0.15.104;]","Mozilla/5.0 (Linux; Android 10; SmartN11 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.105 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/330.0.0.10.108;]","Mozilla/5.0 (Linux; Android 8.1.0; Easy_Smart_2 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36[FBAN/EMA;FBLC/en_GB;FBAV/283.0.0.6.117;]","Mozilla/5.0 (Linux; Android 8.1.0; Easy_Smart_2 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.118 Mobile Safari/537.36[FBAN/EMA;FBLC/en_GB;FBAV/276.0.0.17.116;]","Mozilla/5.0 (Linux; Android 12; ZTE Blade A33s Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/375.0.0.7.111;]","Mozilla/5.0 (Linux; Android 12; itel A632W Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.66 Mobile Safari/537.36[FBAN/EMA;FBLC/en_GB;FBAV/382.0.0.11.115;]","Mozilla/5.0 (Linux; Android 12; itel A632W Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/379.0.0.8.118;]","Mozilla/5.0 (Linux; Android 11; PESM10 Build/RKQ1.211019.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36[FBAN/EMA;FBLC/en_GB;FBAV/325.0.0.0.3;]","Mozilla/5.0 (Linux; Android 10; Elite E55 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/304.0.0.9.106;]","Mozilla/5.0 (Linux; Android 10; Elite E55 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.117 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/341.0.0.7.68;]","Mozilla/5.0 (Linux; Android 10; Elite E55 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.60 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/359.0.0.11.81;]",])
-	return ua 
+        samsung_models = [
+            "SM-P610|P610XXS3FWD2",
+            "SM-T595|T595XXU4CVG4",
+            "SM-A107M|A107MUBS6CWD3",
+            "SM-A307GT|A307GTVJS5CWE2",
+            "SM-G991U|G991USQS8EWG1",
+            "SM-G985F|G985FXXSIHWGA",
+            "SM-N985F|N985FXXS7HWG1",
+            "SM-A515F|A515FXXU7HWF1",
+            "SM-A725F|A725FXXU6DWE3",
+            "SM-M315F|M315FXXU3CWA2",
+            "SM-F916U|F916USQS2JWE4",]
+        model_,build = random.choice(samsung_models).rsplit('|')
+        os_v = random.randint(59,299)
+        fbav = f"{os_v}.0.0.{random.randint(9,49)}.{random.randint(11,318)}"
+        ua = ('[FBAN/Orca-Android;FBAV/'+str(fbav)+';FBPN/com.facebook.orca;FBLC/en_US;FBBV/'+str(random.randint(1111111,7777777))+';FBCR/null;FBMF/samsung;FBBD/samsung;FBDV/'+str(model_)+'/7.2.9;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=810,height=1704};FB_FW/1;]')
+        return ua
