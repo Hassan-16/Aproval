@@ -1,15 +1,15 @@
 def R_Ua():
         samsung_models = [
-            "SM-P610|P610XXS3FWD2",
-            "SM-T595|T595XXU4CVG4",
+            "SM-J610F|J610FXXS8CVL1",
+            "SM-A515F|A515FXXU8HWK1",
             "SM-A107M|A107MUBS6CWD3",
-            "SM-A307GT|A307GTVJS5CWE2",
-            "SM-G991U|G991USQS8EWG1",
-            "SM-G985F|G985FXXSIHWGA",
-            "SM-N985F|N985FXXS7HWG1",
-            "SM-A515F|A515FXXU7HWF1",
-            "SM-A725F|A725FXXU6DWE3",
-            "SM-M315F|M315FXXU3CWA2",
+            "SM-N950F|N950FXXUGDVGC",
+            "SM-A307FN|A307FNXXS4CWH2",
+            "SM-G955F|G955FXXUCDVI1",
+            "SM-A115U|A115USQU9CWG21",
+            "SM-G981U|G981USQS7HWJ1",
+            "SM-M215F|M215FXXU2AUB1",
+            "SM-A115A|A115AUCS7CWB1",
             "SM-F916U|F916USQS2JWE4",]
         model_,build = random.choice(samsung_models).rsplit('|')
         os_v = random.randint(4, 13)
