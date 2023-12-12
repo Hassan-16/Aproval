@@ -1,4 +1,4 @@
-def iAmMethod1Ua:
+def iAmMethod1Ua,
         samsung_models = [
             "SM-J610F|J610FXXS8CVL1",
             "SM-A515F|A515FXXU8HWK1",
